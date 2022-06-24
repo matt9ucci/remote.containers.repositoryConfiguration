@@ -6,4 +6,5 @@
 		"ms-dotnettools.csharp",
 		"ms-vscode.powershell",
 	],
+	"postCreateCommand": "./tools/install-powershell.sh",
 }
