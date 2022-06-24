@@ -1,0 +1,20 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build: default",
+			"type": "shell",
+			"group": {
+				"isDefault": true,
+				"kind": "build",
+			},
+			"command": "make clean && make",
+		},
+		{
+			"label": "build: debug",
+			"type": "shell",
+			"group": "build",
+			"command": "make clean && make CXXFLAGS='-std=c++17 -Wall -Wextra -g3'",
+		},
+	],
+}
