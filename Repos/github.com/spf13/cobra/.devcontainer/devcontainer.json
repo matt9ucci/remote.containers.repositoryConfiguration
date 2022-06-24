@@ -1,0 +1,13 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"extensions": [
+		"golang.go",
+	],
+	"features": {
+		"powershell": "latest",
+	},
+	"postCreateCommand": "go get -v github.com/kyoh86/richgo && make test",
+	"remoteUser": "vscode",
+}
