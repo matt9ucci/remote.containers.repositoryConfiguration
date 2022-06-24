@@ -1,0 +1,13 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"extensions": [
+		"ms-python.python",
+		"ms-vscode.powershell",
+	],
+	"features": {
+		"powershell": "latest",
+	},
+	"remoteUser": "vscode",
+}
