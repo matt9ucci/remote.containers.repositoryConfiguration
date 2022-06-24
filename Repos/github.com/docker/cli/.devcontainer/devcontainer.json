@@ -1,0 +1,14 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"extensions": [
+		"golang.go",
+	],
+	"features": {
+		"powershell": "latest",
+	},
+	"mounts": [ "type=bind,src=/var/run/docker.sock,dst=/var/run/docker.sock" ],
+	"postCreateCommand": "sudo chown vscode:vscode /var/run/docker.sock; go mod init github.com/docker/cli",
+	"remoteUser": "vscode",
+}
