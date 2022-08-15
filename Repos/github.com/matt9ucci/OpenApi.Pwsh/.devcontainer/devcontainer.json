@@ -1,0 +1,12 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile",
+	},
+	"extensions": [
+		"mhutchie.git-graph",
+		"ms-dotnettools.csharp",
+		"ms-vscode.powershell",
+		"OnlyLys.leaper",
+	],
+	"postCreateCommand": "pwsh -c Install-Module Pester, PSReadLine -Force",
+}
