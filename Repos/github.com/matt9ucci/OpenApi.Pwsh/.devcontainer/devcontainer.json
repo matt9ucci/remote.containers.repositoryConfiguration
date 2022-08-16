@@ -2,11 +2,18 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 	},
-	"extensions": [
-		"mhutchie.git-graph",
-		"ms-dotnettools.csharp",
-		"ms-vscode.powershell",
-		"OnlyLys.leaper",
-	],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"terminal.integrated.defaultProfile.linux": "pwsh",
+			},
+			"extensions": [
+				"mhutchie.git-graph",
+				"ms-dotnettools.csharp",
+				"ms-vscode.powershell",
+				"OnlyLys.leaper",
+			],
+		}
+	},
 	"postCreateCommand": "pwsh -c Install-Module Pester, PSReadLine -Force",
 }
