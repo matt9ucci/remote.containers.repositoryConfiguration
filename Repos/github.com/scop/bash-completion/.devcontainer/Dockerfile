@@ -1,4 +1,4 @@
-FROM ghcr.io/matt9ucci/vscode/ubuntu:20.04
+FROM ghcr.io/matt9ucci/vscode/devcontainers/ubuntu
 
 ARG DEBIAN_FRONTEND=noninteractive
 
