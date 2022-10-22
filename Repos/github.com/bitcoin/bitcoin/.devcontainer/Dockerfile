@@ -1,1 +1,1 @@
-FROM ghcr.io/matt9ucci/vscode/cpp:ubuntu
+FROM ghcr.io/matt9ucci/vscode/devcontainers/cpp
