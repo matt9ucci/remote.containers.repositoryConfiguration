@@ -1,9 +1,0 @@
-{
-	"build": {
-		"dockerfile": "Dockerfile",
-	},
-	"extensions": [
-		"ms-dotnettools.csharp",
-		"ms-vscode.powershell",
-	],
-}
